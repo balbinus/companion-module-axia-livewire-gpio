@@ -18,7 +18,7 @@ export type GpioDirection = 'gpi' | 'gpo'
 // ── GPIO state constants ──
 
 export const GPIO_STATE_HIGH = 0x00
-export const GPIO_STATE_LOW = 0xc0
+export const GPIO_STATE_LOW = /*0xc0*/ 0x1 // Use 0x01 for "GPI devices"
 
 // ── Pin state interface ──
 

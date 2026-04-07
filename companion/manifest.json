@@ -4,7 +4,7 @@
 	"name": "Axia Livewire GPIO",
 	"shortname": "Axia LW GPIO",
 	"description": "Control Livewire GPIO pins (GPI/GPO) using the CMsg2 binary protocol over UDP multicast",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"license": "MIT",
 	"repository": "git+https://github.com/balbinus/companion-module-axia-livewire-gpio.git",
 	"bugs": "https://github.com/balbinus/companion-module-axia-livewire-gpio/issues",

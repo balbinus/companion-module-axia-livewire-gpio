@@ -10,8 +10,8 @@ const PIN_CHOICES = [
 ]
 
 const LEVEL_CHOICES = [
-	{ id: 'high', label: 'High (Active)' },
-	{ id: 'low', label: 'Low (Inactive)' },
+	{ id: 'high', label: 'High (Inactive)' },
+	{ id: 'low', label: 'Low (Active)' },
 ]
 
 const ALL_PIN_CHOICES = [

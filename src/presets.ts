@@ -74,13 +74,13 @@ function registerConsolePresets(self: GpioModuleInstance): void {
 					down: [
 						{
 							actionId: 'gpo_set',
-							options: { channel: defaultChannel, pin: String(pin), level: 'high' },
+							options: { channel: defaultChannel, pin: String(pin), level: 'low' },
 						},
 					],
 					up: [
 						{
 							actionId: 'gpo_set',
-							options: { channel: defaultChannel, pin: String(pin), level: 'low' },
+							options: { channel: defaultChannel, pin: String(pin), level: 'high' },
 						},
 					],
 				},
@@ -106,7 +106,7 @@ function registerConsolePresets(self: GpioModuleInstance): void {
 					options: {
 						channel: defaultChannel,
 						pin: String(pin),
-						level: 'high',
+						level: 'low',
 					},
 					style: {
 						bgcolor: combineRgb(0, 255, 0),
@@ -192,13 +192,13 @@ function registerNodePresets(self: GpioModuleInstance): void {
 					down: [
 						{
 							actionId: 'gpi_assert',
-							options: { channel: defaultChannel, pin: String(pin), level: 'high' },
+							options: { channel: defaultChannel, pin: String(pin), level: 'low' },
 						},
 					],
 					up: [
 						{
 							actionId: 'gpi_assert',
-							options: { channel: defaultChannel, pin: String(pin), level: 'low' },
+							options: { channel: defaultChannel, pin: String(pin), level: 'high' },
 						},
 					],
 				},
@@ -224,10 +224,10 @@ function registerNodePresets(self: GpioModuleInstance): void {
 					options: {
 						channel: defaultChannel,
 						pin: String(pin),
-						level: 'high',
+						level: 'low',
 					},
 					style: {
-						bgcolor: combineRgb(255, 165, 0),
+						bgcolor: combineRgb(224, 218, 40),
 						color: combineRgb(0, 0, 0),
 					},
 				},

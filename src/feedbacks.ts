@@ -19,8 +19,8 @@ const PIN_CHOICES_GPO = [
 ]
 
 const LEVEL_CHOICES = [
-	{ id: 'high', label: 'High' },
-	{ id: 'low', label: 'Low' },
+	{ id: 'high', label: 'High (Inactive)' },
+	{ id: 'low', label: 'Low (Active)' },
 ]
 
 function registerConsoleFeedbacks(self: GpioModuleInstance): void {
@@ -29,7 +29,7 @@ function registerConsoleFeedbacks(self: GpioModuleInstance): void {
 			name: 'GPI Pin State',
 			type: 'boolean',
 			defaultStyle: {
-				bgcolor: combineRgb(0, 255, 0),
+				bgcolor: combineRgb(224, 218, 40),
 				color: combineRgb(0, 0, 0),
 			},
 			options: [
@@ -52,7 +52,7 @@ function registerConsoleFeedbacks(self: GpioModuleInstance): void {
 					id: 'level',
 					type: 'dropdown',
 					label: 'Active when',
-					default: 'high',
+					default: 'low',
 					choices: LEVEL_CHOICES,
 				},
 			],
@@ -79,7 +79,7 @@ function registerNodeFeedbacks(self: GpioModuleInstance): void {
 			name: 'GPO Received State',
 			type: 'boolean',
 			defaultStyle: {
-				bgcolor: combineRgb(255, 165, 0),
+				bgcolor: combineRgb(224, 218, 40),
 				color: combineRgb(0, 0, 0),
 			},
 			options: [
